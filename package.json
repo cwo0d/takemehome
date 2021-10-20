@@ -1,0 +1,16 @@
+{
+	"scripts": {
+		"build": "cd tmh/client && tsc && tsc-alias && cd dist && npx madge --circular --extensions js ./ && cd ../../server && tsc && tsc-alias && cd dist && npx madge --circular --extensions js ./",
+		"start": "cd .. && altv-server.exe",
+		"install-packages": "cd tmh & npm install && npm install -g typescript madge tsc-alias"
+	},
+	"dependencies": {
+		"alt": "^0.18.6"
+	},
+	"devDependencies": {
+		"@altv/types-server": "^2.0.7",
+		"@altv/types-shared": "^1.0.8",
+		"@types/node": "^15.0.2",
+		"prettier": "2.2.1"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"noImplicitAny": false,
+		"target": "esnext",
+		"module": "commonjs",
+		"allowJs": true,
+		"newLine": "LF",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"baseUrl": "src",
+		"types": ["node"],
+		"typeRoots": ["./typings"],
+		"paths": {
+			"@typings/*": ["../typings/*"],
+			"@server/*": ["./*"]
+		}
+	}
+}
